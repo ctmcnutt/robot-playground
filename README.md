@@ -11,3 +11,18 @@ Portfolio automation framework using:
 
 Target application:
 https://the-internet.herokuapp.com/
+
+## Repo Framework Structure
+
+- docs/
+  - architecture documentation
+
+- resources/
+  - page objects
+  - reusable keywords
+  - locators
+  - shared variables
+
+- tests/
+  - smoke suites
+  - regression suites
