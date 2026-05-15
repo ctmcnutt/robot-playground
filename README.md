@@ -26,3 +26,10 @@ https://the-internet.herokuapp.com/
 - tests/
   - smoke suites
   - regression suites
+
+## Current Framework Features
+
+- Browser Library integration
+- Shared browser lifecycle keywords
+- Configurable execution settings
+- Initial smoke validation test

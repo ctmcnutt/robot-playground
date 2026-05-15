@@ -12,6 +12,7 @@ report.html
 
 # Playwright
 playwright-report/
+playwright-log.txt
 
 # IDE
 .vscode/
