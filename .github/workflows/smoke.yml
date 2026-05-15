@@ -1,0 +1,45 @@
+name: Robot Playground Regression
+
+on:
+  push:
+    branches:
+      - main
+      - RP-*
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set Up Python
+        run: uv python install
+
+      - name: Install Dependencies
+        run: uv sync
+
+      - name: Install Browser Library Dependencies
+        run: |
+          uv run rfbrowser init
+
+      - name: Execute Smoke Tests
+        run: |
+          uv run robot tests/smoke
+
+      - name: Upload Robot Playground Reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: robot-playground-reports
+          path: |
+            log.html
+            report.html
+            output.xml
