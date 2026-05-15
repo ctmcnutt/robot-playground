@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  regression:
+  smoke:
     runs-on: ubuntu-latest
 
     steps:
