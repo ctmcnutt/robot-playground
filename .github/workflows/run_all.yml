@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  smoke:
+  run-all:
     runs-on: ubuntu-latest
 
     steps:
