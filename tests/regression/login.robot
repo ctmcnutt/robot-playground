@@ -22,7 +22,7 @@ Error Banner Closes Upon Clicking X Button
     Click Banner Close Button Should Remove Banner
 
 
-Logout Success Banner CLoses Upon Clicking X Button
+Logout Success Banner Closes Upon Clicking X Button
     Open Login Page
     Login With Credentials    tomsmith    SuperSecretPassword!
     Click Logout Button
