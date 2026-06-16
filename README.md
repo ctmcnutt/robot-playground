@@ -1,8 +1,10 @@
 # Robot Framework Playground: The Internet
 
-Portfolio automation framework using:
+This project demonstrates a POM-based test automation framework, using the Robot Framework and Python language
 
-- Python 3
+## Tech Stack
+
+- Python
 - Robot Framework
 - Browser Library
 - Playwright
@@ -32,4 +34,5 @@ https://the-internet.herokuapp.com/
 - Browser Library integration
 - Shared browser lifecycle keywords
 - Configurable execution settings
-- Initial smoke validation test
+- Initial smoke and regression validation tests
+- GitHub Action run hooks for PR and main branch merge
